@@ -37,56 +37,54 @@ export const Message = [
 
 export const workExp = [
   {
+    place: " Call For REGISTRATION",
+    tenure: "Join us and discover your path",
+    // role: "",
+    // detail: "",
+  },
+  {
     place: "",
-    tenure: "",
+    tenure: "•Growth opportunities: Explore avenues for personal and",
+    role: "To register please text or call",
+    detail: "",
+  },
+  {
+    place: "",
+    tenure: "professional development.",
     role: "",
     detail: "",
   },
   {
     place: "",
-    tenure: "",
+    tenure:
+      "•Professional networking: Build connections with like-minded professionals.",
+    role: "+254 733 432 525",
+    detail: "",
+  },
+  {
+    place: "",
+    tenure:
+      "•Unlock your potential: Engage with a network of driven individuals.",
     role: "",
     detail: "",
   },
   {
     place: "",
-    tenure: "",
+    tenure:
+      "•Vibrant community: Surround yourself with young, ambitious achievers.",
+    role: "",
+    detail: "",
+  },
+
+  {
+    place: "",
+    tenure: "•Inspirational mentors: Gain insights from experienced guides.",
     role: "",
     detail: "",
   },
   {
     place: "",
-    tenure: "",
-    role: "",
-    detail: "",
-  },
-  {
-    place: "",
-    tenure: "",
-    role: "",
-    detail: "",
-  },
-  {
-    place: "",
-    tenure: "",
-    role: "",
-    detail: "",
-  },
-  {
-    place: "",
-    tenure: "",
-    role: "",
-    detail: "",
-  },
-  {
-    place: "",
-    tenure: "",
-    role: "",
-    detail: "",
-  },
-  {
-    place: "",
-    tenure: "",
+    tenure: "•Mentorship roles: Take the chance to guide and influence peers.",
     role: "",
     detail: "",
   },
