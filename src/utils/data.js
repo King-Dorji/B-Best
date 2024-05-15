@@ -24,12 +24,8 @@ export const projectExperience = [
 
 export const WhatDoIHelp = [
   "Ladies and gentlemen, esteemed young energy professionals, I write to you today to ignite the flames of ambition and determination within each of you. The energy industry is a dynamic realm filled with boundless opportunities and challenges awaiting those with the courage to seize them. As you embark on your academic journey, remember that your diligence and dedication today will shape the trajectory of your career tomorrow. Let every lecture, every assignment, and every exam be a stepping stone towards your ultimate goal. But it's not just about excelling in academics; it's about being proactive and seizing every opportunity that comes your way. ",
-  // "Whether it's a research project, an internship, or a networking event, embrace it with fervor and enthusiasm. These experiences will not only enrich your knowledge but also pave the way for your future success. In this competitive industry, it's very essential to be aggressive in pursuing your goals. Don't wait for opportunities to knock on your door; go out there and create them. Be bold, be fearless, and never underestimate the power of your dreams.",
-  // "And remember, your career is not just about climbing the corporate ladder; it's about continuously evolving and growing as a professional. Embrace lifelong learning, stay curious, and never settle for mediocrity. So, to you, my fellow energy enthusiasts, let us all channel our passion into purpose, our dreams into action, and our ambitions into achievements. Together, let us build a future where our careers soar as high as our aspirations. The journey won't be easy, but with hard work, determination, and a sprinkle of audacity, success will be ours to claim. Thank you so much for your time, looking forward to networking more with you guys and possible collaborations once I am back in Kenya.",
-  // "Mbarikiwe sana!.",
 ];
 export const Message = [
-  // "Ladies and gentlemen, esteemed young energy professionals, I write to you today to ignite the flames of ambition and determination within each of you. The energy industry is a dynamic realm filled with boundless opportunities and challenges awaiting those with the courage to seize them. As you embark on your academic journey, remember that your diligence and dedication today will shape the trajectory of your career tomorrow. Let every lecture, every assignment, and every exam be a stepping stone towards your ultimate goal. But it's not just about excelling in academics; it's about being proactive and seizing every opportunity that comes your way. ",
   "Whether it's a research project, an internship, or a networking event, embrace it with fervor and enthusiasm. These experiences will not only enrich your knowledge but also pave the way for your future success. In this competitive industry, it's very essential to be aggressive in pursuing your goals. Don't wait for opportunities to knock on your door; go out there and create them. Be bold, be fearless, and never underestimate the power of your dreams.",
   "And remember, your career is not just about climbing the corporate ladder; it's about continuously evolving and growing as a professional. Embrace lifelong learning, stay curious, and never settle for mediocrity. So, to you, my fellow energy enthusiasts, let us all channel our passion into purpose, our dreams into action, and our ambitions into achievements. Together, let us build a future where our careers soar as high as our aspirations. The journey won't be easy, but with hard work, determination, and a sprinkle of audacity, success will be ours to claim. Thank you so much for your time, looking forward to networking more with you guys and possible collaborations once I am back in Kenya.",
   "Mbarikiwe sana!.",
@@ -119,46 +115,28 @@ export const comments = [
     img: "./kings.svg",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
+    name: "BE Your Best",
+    post: "BYB",
+    comment: "Be your best self",
+    img: "./byb.svg",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
+    name: "BE Your Best",
+    post: "BYB",
+    comment: "Be your best self",
+    img: "./byb.svg",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
+    name: "BE Your Best",
+    post: "BYB",
+    comment: "Be your best self",
+    img: "./byb.svg",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
+    name: "BE Your Best",
+    post: "BYB",
+    comment: "Be your best self",
+    img: "./byb.svg",
   },
 ];
 
