@@ -35,8 +35,8 @@ export const workExp = [
   {
     place: " Call For REGISTRATION",
     tenure: "Join us and discover your path",
-    // role: "",
-    // detail: "",
+    role: "",
+    detail: "",
   },
   {
     place: "",
