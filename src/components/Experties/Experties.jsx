@@ -44,12 +44,14 @@ const Experties = () => {
         </div>
 
         {/* right */}
-        <motion.div variants={textVariant(0.5)} className={css.rightSide}>
-          <span className="primaryText">
-            Eng. Kandie`s Message Project manager at Safer Power Ltd (BYB Gold
-            Member){" "}
-          </span>
-        </motion.div>
+        <motion.div
+          variants={textVariant(0.5)}
+          className={css.rightSide}
+        ></motion.div>
+        <span className="primaryText">
+          Eng. Kandie`s Message Project manager at Safer Power Ltd (BYB Gold
+          Member){" "}
+        </span>
         {WhatDoIHelp.map((paragraph, i) => (
           <span className="secondaryText" key={i}>
             {paragraph}
