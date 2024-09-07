@@ -33,7 +33,7 @@ export const Message = [
 
 export const workExp = [
   {
-    place: " Call For REGISTRATION",
+    place: " Call For Registration",
     tenure: "Join us and discover your path",
     role: "",
     detail: "",

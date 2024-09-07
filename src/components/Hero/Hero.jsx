@@ -4,6 +4,21 @@ import css from "./Hero.module.scss";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const handleEmailClick = (e) => {
+    e.preventDefault();
+    const email = "Info@beyourbest.co.ke";
+    const subject = "Inquiry from Be Your Best Website";
+    const body = "Hello,\n\nI am reaching out regarding...";
+
+    // Gmail-specific URL
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    // Open Gmail in a new tab
+    window.open(gmailUrl, "_blank");
+  };
+
   return (
     <section className={`paddings ${css.wrapper}`}>
       <motion.div
@@ -43,9 +58,14 @@ const Hero = () => {
           />
         </motion.div>
 
-        <a className={css.email} href="mailto:Info@beyourbest.co.ke">
+        <motion.a
+          className={css.email}
+          href="mailto:Info@beyourbest.co.ke"
+          onClick={handleEmailClick}
+          variants={fadeIn("up", "tween", 0.3, 1)}
+        >
           Info@beyourbest.co.ke
-        </a>
+        </motion.a>
 
         <div className={css.lowerElements}>
           <motion.div

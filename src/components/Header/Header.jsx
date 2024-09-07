@@ -17,6 +17,17 @@ const Header = () => {
     setMenuOpened,
   });
 
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(phoneNumber).then(
+      () => {
+        alert("Phone number copied to clipboard!");
+      },
+      (err) => {
+        console.error("Failed to copy phone number: ", err);
+      }
+    );
+  };
+
   return (
     <motion.div
       variants={headerVariants}
@@ -36,18 +47,18 @@ const Header = () => {
           style={getMenuStyles(menuOpened)}
         >
           <li>
-            <a href="#experties">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="#work">BTalk</a>
+            <a href="#portfolio">BYTalk</a>
           </li>
           <li>
-            <a href="#portfolio">About Us</a>
+            <a href="#work">Join</a>
           </li>
           <li>
             <a href="#people">Executive</a>
           </li>
-          <li className={`flexCenter ${css.phone}`}>
+          <li className={`flexCenter ${css.phone}`} onClick={copyToClipboard}>
             <p>+254733432525</p>
             <BiPhoneCall size={"40px"} />
           </li>
