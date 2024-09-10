@@ -1,55 +1,66 @@
-@import '../../styles/contants.scss';
+.wrapper {
+  background-color: #0d2f3f;
+  color: #fff;
 
-.wrapper{
-    background: white;
-    .container{
-        gap: 2rem;
-        @media (max-width: $sm) {
-            flex-direction: column;
-            gap: 2rem;
-            align-items: flex-start;
+  .container {
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      .primaryText {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+
+      a {
+        color: orange;
+        text-decoration: underline;
+        &:hover {
+          color: orange;
         }
-        .left{
-            flex: 3;
-            >*{
-                display: block;
-            }
-            >:nth-child(2)
-            {
-                margin-top: 3rem;
-
-                a{
-                    text-decoration: underline;
-                    color: orange;
-                }
-            }
-        }
-
-
-        .right{
-            flex: 1;
-            .info{
-                margin-bottom: 1rem;
-                >*{
-                    display: block;
-                }
-            }
-            .menu{
-                @media (max-width: $sm) {
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                }
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                list-style: none;
-                li{
-                    cursor: pointer;
-                    &:hover{
-                        color: $secondary
-                    }
-                }
-            }
-        }
+      }
     }
+
+    .right {
+      .info {
+        font-size: 1rem;
+        color: #bbb;
+
+        a {
+          color: orange;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+
+      .menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        li {
+          a {
+            color: #fff;
+            text-transform: uppercase;
+            &:hover {
+              color: orange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .phone {
+    cursor: pointer;
+  }
 }

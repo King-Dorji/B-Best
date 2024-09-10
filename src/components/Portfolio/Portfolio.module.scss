@@ -67,7 +67,7 @@
       left: 0;
       z-index: 20;
 
-      @media (max-width: $sm) {
+      @media (max-width: $md) {
         flex-direction: column;
         flex-wrap: wrap;
       }
@@ -143,7 +143,7 @@
       padding: 0 0.5rem;
       justify-content: space-around;
 
-      @media (min-width: 768px) {
+      @media (min-width: 1025px) {
         flex-direction: row;
         gap: 1rem;
       }

@@ -11,21 +11,29 @@ const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const headerShadow = useHeaderShadow();
 
-  //to handle click outside of sidebar on mobile
+  // to handle click outside of sidebar on mobile
   useOutsideAlerter({
     menuRef,
     setMenuOpened,
   });
 
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(phoneNumber).then(
-      () => {
-        alert("Phone number copied to clipboard!");
-      },
-      (err) => {
-        console.error("Failed to copy phone number: ", err);
-      }
-    );
+  const copyPhoneNumberAndNavigate = () => {
+    navigator.clipboard.writeText("+254733432525");
+    alert("Phone number copied to clipboard!");
+
+    // Navigate to footer section after copying the number
+    const footerElement = document.getElementById("footer");
+    if (footerElement) {
+      footerElement.scrollIntoView({ behavior: "smooth" });
+    }
+    setMenuOpened(false);
+  };
+
+  // function to handle closing the menu on small screens
+  const handleMenuClick = () => {
+    if (window.innerWidth <= 768) {
+      setMenuOpened(false);
+    }
   };
 
   return (
@@ -41,24 +49,28 @@ const Header = () => {
         <div className={css.certificate}>
           <img src="./byb.svg" alt="" />
         </div>
+
         <ul
           className={`flexCenter ${css.menu}`}
           ref={menuRef}
           style={getMenuStyles(menuOpened)}
         >
-          <li>
+          <li onClick={handleMenuClick}>
             <a href="/">Home</a>
           </li>
-          <li>
+          <li onClick={handleMenuClick}>
             <a href="#portfolio">BYTalk</a>
           </li>
-          <li>
+          <li onClick={handleMenuClick}>
             <a href="#work">Join</a>
           </li>
-          <li>
+          <li onClick={handleMenuClick}>
             <a href="#people">Executive</a>
           </li>
-          <li className={`flexCenter ${css.phone}`} onClick={copyToClipboard}>
+          <li
+            className={`flexCenter ${css.phone}`}
+            onClick={copyPhoneNumberAndNavigate}
+          >
             <p>+254733432525</p>
             <BiPhoneCall size={"40px"} />
           </li>
