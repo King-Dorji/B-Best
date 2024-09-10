@@ -1,0 +1,41 @@
+.post-cards-container {
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    width: 66.6667%; /* lg:w-2/3 */
+  }
+
+  .pagination {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+
+    button {
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      color: white;
+
+      &.previous {
+        background-color: #f56565; /* bg-red-500 */
+      }
+
+      &.next {
+        background-color: #5a67d8; /* bg-indigo-500 */
+      }
+
+      &:disabled {
+        background-color: gray;
+        cursor: not-allowed;
+      }
+    }
+
+    span {
+      display: inline-block;
+      padding: 0.5rem;
+    }
+  }
+
+  .no-blogs {
+    grid-column: span 12;
+  }
+}

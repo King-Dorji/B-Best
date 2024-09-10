@@ -7,9 +7,9 @@
     align-items: flex-start;
     gap: 2rem;
     flex-wrap: wrap;
-    > div {
-      flex: 1;
-    }
+    // > div {
+    //   flex: 1;
+    // }
 
     .leftSide {
       display: flex;
@@ -72,6 +72,7 @@
     }
   }
   .showCase {
+    display: flex;
     width: 100%;
     gap: 1.5rem;
     justify-content: space-around;
@@ -86,5 +87,133 @@
       box-shadow: 0px 21px 13px rgba(0, 0, 0, 13%);
       cursor: pointer;
     }
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $sm) {
+      flex-direction: column;
+    }
+  }
+
+  .h1 {
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: $sm) {
+      display: none;
+      font-size: medium;
+      margin-top: 10px;
+    }
+  }
+  .hSmall {
+    display: none;
+    flex-wrap: wrap;
+    @media (max-width: $sm) {
+      display: flex;
+      font-size: medium;
+      margin-top: 10px;
+    }
+  }
+}
+
+.wrapper {
+  background: white;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container {
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.authorPic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f2f2f2;
+}
+
+.authorDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorName {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.authorRank,
+.articleDate {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.articleContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .authorPic {
+    width: 50px;
+    height: 50px;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
   }
 }
